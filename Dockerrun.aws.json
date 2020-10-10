@@ -23,8 +23,8 @@
       "memory": 128
     },
     {
-      "name": "server",
-      "image": "johntam/multi-server",
+      "name": "nginx",
+      "image": "johntam/multi-nginx",
       "hostname": "nginx",
       "essential": true,
       "portMapping": [
