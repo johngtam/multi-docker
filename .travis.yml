@@ -16,6 +16,7 @@ after_success:
 
   # Take these images and push them to the hub, log into Docker CLI.
   # Additional comment.
+  # Comment to force reupload?
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push johntam/multi-client
   - docker push johntam/multi-nginx
