@@ -15,6 +15,7 @@ after_success:
   - docker build -t johntam/multi-worker ./worker
 
   # Take these images and push them to the hub, log into Docker CLI.
+  # Additional comment.
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push johntam/multi-client
   - docker push johntam/multi-nginx
